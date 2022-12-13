@@ -28,14 +28,14 @@ public class Main {
             }
         }
 
-        for (Field field : cat.getClass().getDeclaredFields()) {
-            if (field.isAnnotationPresent(ImportantString.class)){
-                Object fieldObject = field.get(cat);
-                if (fieldObject instanceof String stringValue){
-                    System.out.println(stringValue.toUpperCase(Locale.ROOT));
-                }
-            }
-        }
+//        for (Field field : cat.getClass().getDeclaredFields()) {
+//            if (field.isAnnotationPresent(ImportantString.class)){
+//                Object fieldObject = field.get(cat);
+//                if (fieldObject instanceof String stringValue){
+//                    System.out.println(stringValue.toUpperCase(Locale.ROOT));
+//                }
+//            }
+//        }
 
 
     }
