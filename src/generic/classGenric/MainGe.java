@@ -28,6 +28,18 @@ public class MainGe {
                 System.out.println(s);
             }
         });
+
+//        wildCard in generic, when we don't know the type of generic
+//        like it is list of what , Integer or String
+        List<Cat> integerList = new ArrayList<>();
+        integerList.add(new Cat("12 Legs"));
+        printList(integerList);
+    }
+
+    private static void printList(List<? extends Animal> myList){
+        System.out.println("print list method.........");
+        System.out.println(myList);
+
     }
 
 
